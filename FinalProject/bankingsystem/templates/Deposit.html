@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    input[type=text], input[type=password]{
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+input[type=text], input[type=email]{
+
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+input[type=text]:focus, input[type=email]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+input[type=number]{
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+input[type=number]:focus{
+  background-color: #ddd;
+  outline: none;
+}
+.registerbtn {
+  background-color: blue;
+  color: white;
+  padding: 16px 16px;
+  border: none;
+  cursor: pointer;
+  margin-left:8em;
+  opacity: 0.9;
+}
+body{background-image:url(https://image.shutterstock.com/image-photo/people-withdrawal-saving-finance-concept-600w-537353566.jpg);
+background-repeat:no-repeat;
+background-size:85em 60em;}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+.set{margin-left:30em;margin-top:10em;}
+input{width:28em;}
+h1{color:white;}
+label{font-weight:bold;font-size:2em;}
+.mydiv{font-weight:bold;font-size:30px;background-color:white;}
+  </style>
+</head>
+<body>
+<form class="set" action="dodeposite" method="GET">
+  <h1>YOU ARE IN DEPOSIT</h1>
+  <label>ACCOUNT NO:</label><br><br>
+  <div class="mydiv">{{form.account}}</div><br><br>
+  <input type="password" name="psw" placeholder="Enter your Password"><br><br>
+  <input type="text" name="amm" placeholder="Enter your amount"><br><br>
+  <button type="submit" class="registerbtn">LET'S ANALYZE YOU</button>
+</form>
+</body>
+</html>

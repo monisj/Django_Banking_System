@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+h1{text-align:center;color:green}
+</style>
+</head>
+<body>
+<h1>BILL PAYMENT DETAILS</h1>
+
+<table id="customers">
+    <tr>
+        <th>ACCOUNT NO</th>
+        <th>PASSWORD</th>
+        <th>AMOUNT</th>
+        <th>BILL NO</th>
+    </tr>
+    {%for s in stud%}
+    <tr>
+        <td>{{s.account}}</td>
+        <td>{{s.password}}</td>
+        <td>{{s.amount}}</td>
+        <td>{{s.billno}}</td>
+    </tr>
+    {%endfor%}
+
+
+</table>
+
+</body>
+</html>
